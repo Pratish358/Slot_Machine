@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slot-machine-container {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.balance-display {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.control {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+input {
+    padding: 5px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #f39c12;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #d35400;
+}
+
+.spin-btn {
+    margin-top: 20px;
+    background: #2ecc71;
+}
+
+.spin-btn:hover {
+    background: #27ae60;
+}
+
+/* Slot Machine Styles */
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.reel {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #34495e, #2c3e50);
+    border: 3px solid #16a085;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f1c40f;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ecf0f1;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Slot Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slot-machine-container">
+        <h1 class="title">🎰 Modern Slot Machine 🎰</h1>
+        <div class="balance-display">
+            <p id="balance-display">Balance: $0</p>
+        </div>
+
+        <div class="controls">
+            <div class="control">
+                <label for="deposit">Deposit:</label>
+                <input type="number" id="deposit" placeholder="Enter amount">
+                <button class="btn" onclick="handleDeposit()">Deposit</button>
+            </div>
+            <div class="control">
+                <label for="lines">Lines (1-3):</label>
+                <input type="number" id="lines" placeholder="Enter lines">
+                <button class="btn" onclick="handleLines()">Set Lines</button>
+            </div>
+            <div class="control">
+                <label for="bet">Bet:</label>
+                <input type="number" id="bet" placeholder="Enter bet">
+                <button class="btn" onclick="handleBet()">Place Bet</button>
+            </div>
+        </div>
+
+        <div class="slot-machine">
+            <div class="reel" id="reel-1"></div>
+            <div class="reel" id="reel-2"></div>
+            <div class="reel" id="reel-3"></div>
+        </div>
+
+        <button class="btn spin-btn" onclick="spin()">SPIN</button>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
